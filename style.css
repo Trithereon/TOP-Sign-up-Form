@@ -1,3 +1,12 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(/fonts/Norse-Bold.otf);
+}
+
+body {
+    font-family: norse-bold;
+}
+
 * {
     border-style: border-box;
 }
