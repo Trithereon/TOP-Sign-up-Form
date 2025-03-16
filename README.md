@@ -1,13 +1,10 @@
 # TOP-Sign-up-Form
 
-    ```html
-          <section data-title="introduction">
+```html
   <h3 id="introduction"><a href="#introduction" class="anchor-link">Introduction</a></h3>
 
   <p>This project is intended to give you a chance to flex some of the new items you’ve been absorbing over the past few lessons. This time it’s a sign-up form for an imaginary service.</p>
 
-</section>
-<section data-title="assignment">
   <h3 id="assignment"><a href="#assignment" class="anchor-link">Assignment</a></h3>
 
   <div class="lesson-content__panel">
@@ -41,8 +38,7 @@
     </ol>
 
   </div>
-</section>
-
+  ```
 
 
    
