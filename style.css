@@ -1,4 +1,6 @@
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -16,6 +18,8 @@ html, body {
 main {
     height: 100vh;
     display: flex;
+    font-size: 1.8rem;
+    background-color: rgba(221, 216, 145, 0.1);
 }
 
 .backgroundImage {
@@ -28,6 +32,7 @@ main {
     position: relative; /* makes child elements position relative to the parent container */
     height: 100vh;
     display: flex;
+    justify-content: center;
 }
 
 .logo-container {
@@ -51,6 +56,7 @@ main {
 .photo-credits {
     position:absolute;
     bottom:1vh;
+    font-size: 1rem;
 }
 
 .right-side {
@@ -61,12 +67,34 @@ main {
 }
 
 .top-introduction {
+    display:flex;
+    align-items:flex-end;
     height: 33vh;
+    margin: 0px 4vw;
 }
 
-.center-form {
+.center-form, fieldset {
     height: 33vh;
     width: auto;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    margin-top: 10px;
+    border: none;
+    padding: 16px 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(207, 206, 206);
+}
+
+h2 {
+    margin: 1vh 3.8vw;
+} 
+
+.bottom-account, button {
+    margin-left: 2vw;
+    margin-top: 2vh;
 }
 
 .bottom-account {
@@ -74,6 +102,64 @@ main {
     width: auto;
 }
 
+.bottom-account p {
+    margin-left: 2vw;
+}
+
+.form-row {
+    display: flex;
+    margin-left: 2vw;
+}
+
+.form-element {
+    margin: 0 40px 24px;
+}
+
+input {
+    display: block;
+    outline: none;
+    padding: 8px; 
+    font-size: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 1.5rem;
+}
+
+:focus {
+    outline: 0;
+    box-shadow:0 2px 4px#4a6ac3;
+}
+
+input:invalid {
+    border: 1px solid #b92326;
+}
+
+input:focus:invalid {
+    background-color: transparent;
+    border: 1px solid #b92326;
+}
+
+input:valid {
+    border: 1px solid #8BC34A;
+    background-color: rgba(139, 195, 74, 0.25);
+}
+
+
+
+button {
+    background-color: #8c654c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 48px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgb(207, 206, 206);
+}
+
 .signature {
-    margin-top: 28vh;
+    margin: 12vh 20vw;
 }

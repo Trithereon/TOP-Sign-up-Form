@@ -22,28 +22,42 @@
                 Welcome to the sign up form. <br>
                 It doesn't lead anywhere, but it sure is fun to use. <br>
                 It's just like any other web form. <br>
-                <em>Give it a try!</em>
             </div>
             
             <form class="center-form" action="https://httpbin.org/post" method="post">
-                <p>
-                    <label for="first_name">First Name:</label>
-                    <input type="text" id="first_name" name="first_name" placeholder="First name">
-                    <label for="last_name">Last Name:</label>
-                    <input type="text" id="last_name" name="last_name" placeholder="Last name">
-                </p>
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" id="user_email" name="email" placeholder="user@gmail.com">
-                    <label for="phone">Phone number:</label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
-                </p>
-                <p>
-                    <label for="password">Password:</label>
-                    <input type="password" id="user_password" name="password" placeholder="Password">
-                    <label for="password">Confirm Password:</label>
-                    <input type="password" id="user_password_confirm" name="password_confirm" placeholder="Confirm Password">
-                </p>
+                <fieldset>
+                <h2>Give it a try!</h1>
+                <div class="form-row">
+                    <div class="form-element">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" size="20" maxlength="245" placeholder="First name" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" size="20" maxlength="245" placeholder="Last name" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="email" id="user_email" name="email" placeholder="user@gmail.com" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-element">
+                        <label for="password">Password</label>
+                        <input type="password" id="user_password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="password">Confirm Password</label>
+                        <input type="password" id="user_password_confirm" name="password_confirm" placeholder="Confirm Password" required>
+                    </div>
+                </div>
+                </fieldset>
             </form>
             <div class="bottom-account">
                 <button type="submit">Create Account</button>
